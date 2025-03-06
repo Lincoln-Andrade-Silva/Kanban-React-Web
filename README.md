@@ -31,6 +31,11 @@ Siga os passos abaixo para rodar o projeto localmente:
     cd Kanban-React-Web
     ```
 
+3. **Instale o NPM**:
+    ```bash
+    npm install
+    ```
+
 3. **Execute o projeto**:
     ```bash
     npm run dev
