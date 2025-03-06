@@ -1,0 +1,322 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, black 0%, #160025 55%, #2a0047 100%) !important;
+    font-family: "book", "Handset Sans UI", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+}
+
+.ui.vk.button {
+    min-width: 6.2vw !important;
+    color: #ffffff !important;
+    background: rgba(131, 77, 201, 0.5) 100% !important;
+}
+
+/*--------------------------------------------------------------
+# NavBar Component
+--------------------------------------------------------------*/
+
+.ui.menu .ui.dropdown .menu>.item:hover,
+.ui.menu .ui.dropdown .menu>.item {
+    color: white !important;
+}
+
+.ui.popup {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+}
+
+.categories-navbar-dropdown.active.item {
+    border: none !important;
+}
+
+.categories-menu-navbar {
+    overflow-y: auto !important;
+    max-height: 80vh !important;
+    min-height: min-content !important;
+}
+
+.ui.mini.vertical.navbar.menu,
+.ui.bottom.right.popup.transition.visible.navbar {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    border: none !important;
+    color: white !important;
+    text-align: center !important;
+    background-color: #260042 !important;
+}
+
+.ui.mini.vertical.navbar.menu>.item.navbar {
+    display: flex !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+}
+
+.ui.secondary.pointing.menu {
+    border: none !important;
+}
+
+.ui.segment {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.ui.segment.home-page {
+    border: 0px !important;
+}
+
+.ui.inverted.segment.navbar {
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 10 !important;
+    height: 10vh !important;
+    width: 100vw !important;
+    position: fixed !important;
+    padding-top: 1vh !important;
+    box-shadow: none !important;
+    border: transparent !important;
+    background: linear-gradient(to bottom, #040007 0%, #04000791 70%, rgba(0, 0, 0, 0)100%) !important;
+}
+
+.ui.menu .item {
+    font-size: 1.4rem !important;
+    font-weight: bolder !important;
+}
+
+.ui.header {
+    color: white !important;
+    box-shadow: none !important;
+    font-size: 2.2rem !important;
+    font-weight: bolder !important;
+}
+
+.ui.container {
+    padding: 0 !important;
+}
+
+.nav-icon {
+    color: white;
+    margin-left: 5vw;
+    font-size: 2.2rem;
+    margin-right: 2vw;
+    font-weight: bolder;
+}
+
+/*--------------------------------------------------------------
+# Not Found Component
+--------------------------------------------------------------*/
+
+.not-found-page {
+    margin: 0px !important;
+    width: 100vw !important;
+    padding: 0px !important;
+    height: 100vh !important;
+    border-radius: 0px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important;
+}
+
+.ui.container {
+    margin: 0px !important;
+    width: 100% !important;
+}
+
+/*--------------------------------------------------------------
+# Loading Component
+--------------------------------------------------------------*/
+
+.loading-component {
+    color: white !important;
+    margin: 0 auto !important;
+    padding: 0 auto !important;
+    font-family: "Roboto", sans-serif !important;
+    background: transparent !important;
+}
+
+/*--------------------------------------------------------------
+# Generic Page Component
+--------------------------------------------------------------*/
+
+.manage-page {
+    margin-top: 15vh !important;
+    background: transparent !important;
+}
+
+.content-page {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/*--------------------------------------------------------------
+# Generic Table and Modal Component
+--------------------------------------------------------------*/
+
+.table-footer-text {
+    font-weight: 700 !important;
+    font-family: "Lato", sans-serif !important;
+    color: rgba(92, 92, 92, 0.651) !important;
+}
+
+td,
+th {
+    overflow: hidden !important;
+    text-align: start !important;
+    width: max-content !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+
+.ui.pagination.menu .item {
+    font-size: 1rem !important;
+}
+
+.create-entity-button {
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: "Lato", sans-serif !important;
+    background: rgba(131, 77, 201, 0.5) !important;
+    border: rgb(88, 36, 132) 3px solid !important;
+}
+
+.create-entity-button-border {
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: transparent !important;
+    font-family: "Lato", sans-serif !important;
+    border: rgb(255, 255, 255) 2px solid !important;
+}
+
+.ui.tiny.modal.transition.visible.active.confirmation-modal {
+    background: linear-gradient(to bottom, #150025 0%, #1f0036 70%, #260042 100%) !important;
+}
+
+.confirmation-modal-actions,
+.confirmation-modal-content,
+.confirmation-modal-title {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+.confirmation-modal-title {
+    font-size: 1.6rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.confirmation-modal-content {
+    font-size: 1.2rem !important;
+}
+
+.create-entity-button,
+.create-entity-button-border {
+    font-size: 1.1rem !important;
+}
+
+.ui.popup.transition.visible {
+    padding: 12px !important;
+    color: white !important;
+    font-size: 1.1rem !important;
+    background-color: #1c0032 !important;
+}
+
+/*--------------------------------------------------------------
+# Kanban Component
+--------------------------------------------------------------*/
+
+.kanban-page {
+    padding: 0 !important;
+    border: none !important;
+    margin-top: 14vh !important;
+    background-color: transparent !important;
+}
+
+.kanban-board {
+    display: flex;
+    padding: 0 !important;
+    border: none !important;
+    margin-left: 4vw !important;
+    min-height: 80vh !important;
+    margin-right: 4vw !important;
+    justify-content: space-between;
+    background: transparent !important;
+}
+
+.kanban-column {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.kanban-column .column-header {
+    padding: 0.7rem !important;
+    font-size: 1.3rem !important;
+    text-align: center !important;
+    background-color: #3302574d !important;
+}
+
+.ui.header.card-title {
+    font-size: 1.2rem !important;
+    color: #242424 !important;
+}
+
+.client-info {
+    font-size: 1rem !important;
+}
+
+.cards-container {
+    min-height: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3302574d !important;
+}
+
+.kanban-card {
+    color: #666;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 6px solid;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card.dragging {
+    opacity: 0.5;
+}
+
+/* Cores de borda baseadas no status */
+.kanban-card[data-status="novo"] {
+    border-left-color: #ff6b6b;
+}
+
+.kanban-card[data-status="em progresso"] {
+    border-left-color: #4dabf7;
+}
+
+.kanban-card[data-status="em teste"] {
+    border-left-color: #fcc419;
+}
+
+.kanban-card[data-status="finalizado"] {
+    border-left-color: #51cf66;
+}
+
+.kanban-header {
+    display: flex !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    margin-bottom: 6vh !important;
+    align-items: center !important;
+    background-color: transparent !important;
+    justify-content: end !important;
+}
