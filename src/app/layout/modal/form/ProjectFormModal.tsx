@@ -154,7 +154,7 @@ const ProjectFormModalComponent = ({
                 <Button negative onClick={closeModal} className='create-entity-button-border'>
                     {'Cancelar'}
                 </Button>
-                <Button positive onClick={handleSubmit} className='create-entity-button'>
+                <Button positive onClick={handleSubmit} className='create-entity-button' disabled={!status || !name}>
                     {'Salvar'}
                 </Button>
             </Modal.Actions>

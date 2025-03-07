@@ -2,6 +2,7 @@ import { makeAutoObservable } from "mobx";
 import { TaskRequest, TaskResponse } from "../../../app/model/Task";
 import { DropdownOption } from "../../model/DropdownOption";
 import service from "../../service/service";
+import { store } from "../store";
 
 export default class KanbanStore {
     tasks: TaskResponse[] = [];
@@ -39,6 +40,7 @@ export default class KanbanStore {
 
     setSelectedProject(projectId: number) {
         this.selectedProject = projectId;
+        store.clientStore.listByProject(projectId);
         this.list(projectId);
     }
 

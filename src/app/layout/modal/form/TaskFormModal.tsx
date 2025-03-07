@@ -108,19 +108,24 @@ const TaskFormModalComponent: React.FC<TaskFormModalProps> = ({ open, title, tas
                             options={clientOptions}
                             value={selectedClientId || undefined}
                             onChange={(_e, { value }) => setSelectedClientId(value as number)}
-                            placeholder="Selecione o cliente"
+                            placeholder="Selecione o cliente (opcional)"
                         />
                     </Form.Field>
                 </Form>
             </Modal.Content>
             <Modal.Actions className="confirmation-modal-actions">
-                <Button positive onClick={async () => {
-                    await kanbanStore.deleteTask(task!);
-                    closeModal();
-                }} className='create-entity-button-border'>
-                    Deletar
+                <Button positive onClick={async () => { closeModal() }} className='create-entity-button-border'>
+                    Cancelar
                 </Button>
-                <Button positive onClick={handleSubmit} className='create-entity-button'>
+                {task &&
+                    <Button positive onClick={async () => {
+                        await kanbanStore.deleteTask(task!);
+                        closeModal();
+                    }} className='create-entity-button'>
+                        Deletar
+                    </Button>
+                }
+                <Button positive onClick={handleSubmit} className='create-entity-button' disabled={!selectedStatus || !name}>
                     Salvar
                 </Button>
             </Modal.Actions>
