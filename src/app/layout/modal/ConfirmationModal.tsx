@@ -20,7 +20,7 @@ export const ConfirmationModal = ({ message, title, onResult, open, closeModal }
         <Modal
             open={open}
             size='tiny'
-            dimmer='blurring'
+            dimmer={false}
             onClose={closeModal}
             className="confirmation-modal"
         >

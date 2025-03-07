@@ -104,7 +104,7 @@ const ProjectFormModalComponent = ({
         <Modal
             open={open}
             size='tiny'
-            dimmer='blurring'
+            dimmer={false}
             onClose={closeModal}
             className="confirmation-modal"
         >

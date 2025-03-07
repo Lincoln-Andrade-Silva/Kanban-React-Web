@@ -75,7 +75,7 @@ const TaskFormModalComponent: React.FC<TaskFormModalProps> = ({ open, title, tas
     }, []);
 
     return (
-        <Modal open={open} size="tiny" dimmer="blurring" onClose={closeModal} className="confirmation-modal">
+        <Modal open={open} size="tiny" dimmer={false} onClose={closeModal} className="confirmation-modal">
             <Modal.Header className="confirmation-modal-title">{title}</Modal.Header>
             <Modal.Content className="confirmation-modal-content">
                 <Form>
